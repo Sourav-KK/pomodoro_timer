@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- ajax cdn -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- script -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>pomodoro</h1>
+        <div class="panel">
+          <p id="work">work</p>
+          <p id="break">break</p>
+        </div>
+
+        <div class="timer">
+          <div class="circle">
+            <div class="time">
+              <p id="minutes"></p>
+              <p>:</p>
+              <p id="seconds"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button
+            class="btn"
+            id="start"
+            type="button"
+            onclick="startTimer()"
+            title="Play"
+          >
+            <i class="fa-solid fa-play" id="play-icon"></i>
+          </button>
+          <button
+            class="btn"
+            id="pause"
+            type="button"
+            onclick="pauseTimer()"
+            title="Pause"
+          >
+            <i class="fa-solid fa-pause" id="pause-icon"></i>
+          </button>
+          <button
+            class="btn"
+            type="button"
+            id="resetBtn"
+            onclick="resetTimer()"
+            title="Reset"
+          >
+            <i class="fa-solid fa-rotate-left" id="reset-icon"></i>
+          </button>
+        </div>
+
+        <div class="errContainer">
+          <p id="errMesssage"></p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
